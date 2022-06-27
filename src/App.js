@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-// import useSound from "use-sound";
-// import instrumentSprite from "./audio/Instrument-Sprite.wav";
+import useSound from "use-sound";
+import instrumentSprite from "./audio/Instrument-Sprite.wav";
 import instrumentsA from "./instrumentsA";
 import instrumentsB from "./instrumentsB";
 import Switch from "./components/Switch";
@@ -13,33 +13,31 @@ function App() {
   const [volume, setVolume] = useState("50");
   const [isToggled, setIsToggled] = useState(true);
 
-  // const [play] = useSound(
-  //   instrumentSprite,
-  //   {
-  //     sprite: {
-  //       tomLL: [0, 894],
-  //       tomM: [904, 405],
-  //       tambShort: [1314, 285],
-  //       tambLong: [1604, 315],
-  //       snare: [1924, 210],
-  //       snareAccent: [2129, 180],
-  //       rim: [2379, 75],
-  //       kick: [2459, 280],
-  //       kickAccent: [2854, 320],
-  //       hihat: [3239, 60],
-  //       hihatMetal: [3289, 120],
-  //       hihatAccent: [3424, 74],
-  //       guiroShort: [3493, 318],
-  //       guiroLong: [3923, 875],
-  //       cymbal: [4853, 545],
-  //       cowbell: [5478, 125],
-  //       congaL: [5638, 355],
-  //       bongoL: [6073, 115],
-  //       bongoH: [6203, 140],
-  //     },
-  //   },
-  //   { volume: 0.25 }
-  // );
+  const spriteMap = {
+    tomLL: [0, 894],
+    tomM: [904, 405],
+    tambShort: [1314, 285],
+    tambLong: [1604, 315],
+    snare: [1924, 210],
+    snareAccent: [2129, 180],
+    rim: [2379, 75],
+    kick: [2459, 280],
+    kickAccent: [2854, 320],
+    hihat: [3239, 60],
+    hihatMetal: [3289, 120],
+    hihatAccent: [3424, 74],
+    guiroShort: [3493, 318],
+    guiroLong: [3923, 875],
+    cymbal: [4853, 545],
+    cowbell: [5478, 125],
+    congaL: [5638, 355],
+    bongoL: [6073, 115],
+    bongoH: [6203, 140],
+  };
+  const [play, { stop }] = useSound(instrumentSprite, {
+    sprite: spriteMap,
+    volume: parseInt(volume) / 100,
+  });
 
   const handleVoume = (event) => {
     setVolume(event.target.value);
@@ -105,19 +103,21 @@ function App() {
       setActive(true);
       setTimeout(() => setActive(false), 200);
       //setInstrumentName_(sound.name);
-      setTimeout(() => setInstrumentName_(sound.name), 200);
+      setTimeout(() => setInstrumentName_(sound.name), 100);
       const audioTag = document.getElementById(sound.key.toUpperCase());
       audioTag.currentTime = 0;
-      audioTag.volume = parseInt(volume) / 100;
-      var playPromise = audioTag.play();
+      audioTag.volume = 0;
+      stop();
+      play({ id: sound.id });
+      // var playPromise = audioTag.play();
 
-      if (playPromise !== undefined) {
-        playPromise
-          .then((_) => {})
-          .catch((error) => {
-            console.log("error try again");
-          });
-      }
+      // if (playPromise !== undefined) {
+      //   playPromise
+      //     .then((_) => {})
+      //     .catch((error) => {
+      //       console.log("error try again");
+      //     });
+      // }
     };
 
     return (
