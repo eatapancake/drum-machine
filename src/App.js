@@ -4,8 +4,8 @@ import React, { useState, useEffect } from "react";
 import instrumentsA from "./instrumentsA";
 import instrumentsB from "./instrumentsB";
 import Switch from "./components/Switch";
+import "./components/radio.css";
 import "./App.css";
-import "./radio.css";
 
 function App() {
   const [instrumentName, setInstrumentName] = useState("---");

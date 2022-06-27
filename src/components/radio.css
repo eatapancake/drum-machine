@@ -1,5 +1,6 @@
 #A,
 #B {
+  cursor: pointer;
   height: 20px;
   width: 20px;
   background-color: #eee;
