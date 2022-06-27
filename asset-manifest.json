@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/drum-machine/static/css/main.9cefb6b8.css",
+    "main.js": "/drum-machine/static/js/main.857698a7.js",
+    "static/js/787.c419f7a1.chunk.js": "/drum-machine/static/js/787.c419f7a1.chunk.js",
+    "static/media/guiro-long.wav": "/drum-machine/static/media/guiro-long.624e0ef87d40b36772fd.wav",
+    "static/media/cymbal.wav": "/drum-machine/static/media/cymbal.45c2b68a260b6b21df78.wav",
+    "static/media/tom-ll.wav": "/drum-machine/static/media/tom-ll.e0b7bf4cadc736aff5fc.wav",
+    "static/media/guiro-short.wav": "/drum-machine/static/media/guiro-short.58582b94ca3fc181392f.wav",
+    "static/media/conga-l.wav": "/drum-machine/static/media/conga-l.0c61bddcaa2d6e263314.wav",
+    "static/media/kick.wav": "/drum-machine/static/media/kick.9606eeb7ff49923eeb33.wav",
+    "static/media/kick-accent.wav": "/drum-machine/static/media/kick-accent.0a7b2082f18f437f66a4.wav",
+    "static/media/tamb-long.wav": "/drum-machine/static/media/tamb-long.7ec63025e27b00b1b7e2.wav",
+    "static/media/tamb-short.wav": "/drum-machine/static/media/tamb-short.dd826bf03ba0eb057d1d.wav",
+    "static/media/snare-accent.wav": "/drum-machine/static/media/snare-accent.64f3857829da3ec687dd.wav",
+    "static/media/tom-m.wav": "/drum-machine/static/media/tom-m.e34b5170b01d659d4495.wav",
+    "static/media/snare.wav": "/drum-machine/static/media/snare.ea17f650c707a5083b05.wav",
+    "static/media/cowbell.wav": "/drum-machine/static/media/cowbell.d13ef0a0a29ae01482b6.wav",
+    "static/media/hihat-metal.wav": "/drum-machine/static/media/hihat-metal.a500194f6552f7f73e75.wav",
+    "static/media/bongo-l.wav": "/drum-machine/static/media/bongo-l.86373f42cb02da3ce1d6.wav",
+    "static/media/bongo-h.wav": "/drum-machine/static/media/bongo-h.08c7df9f93c15ced9808.wav",
+    "static/media/rim.wav": "/drum-machine/static/media/rim.adc9a2972e2958b97791.wav",
+    "static/media/hihat.wav": "/drum-machine/static/media/hihat.9ab540ba2b873a461675.wav",
+    "index.html": "/drum-machine/index.html",
+    "main.9cefb6b8.css.map": "/drum-machine/static/css/main.9cefb6b8.css.map",
+    "main.857698a7.js.map": "/drum-machine/static/js/main.857698a7.js.map",
+    "787.c419f7a1.chunk.js.map": "/drum-machine/static/js/787.c419f7a1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9cefb6b8.css",
+    "static/js/main.857698a7.js"
+  ]
+}
