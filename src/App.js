@@ -105,7 +105,7 @@ function App() {
       setActive(true);
       setTimeout(() => setActive(false), 200);
       //setInstrumentName_(sound.name);
-      setTimeout(() => setInstrumentName_(sound.name), 10);
+      setTimeout(() => setInstrumentName_(sound.name), 200);
       const audioTag = document.getElementById(sound.key.toUpperCase());
       audioTag.currentTime = 0;
       audioTag.volume = parseInt(volume) / 100;
