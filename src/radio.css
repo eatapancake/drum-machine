@@ -1,0 +1,14 @@
+#A,
+#B {
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  margin-right: 5px;
+  margin-left: 10px;
+  transform: translateY(-1.5px);
+  accent-color: green;
+}
+#A:after {
+  background-color: blueviolet;
+  color: red;
+}
